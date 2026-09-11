@@ -7,7 +7,8 @@
 
 **AgniNetram** is an ultra-affordable thermal vision system (₹9,000 / $110 USD) designed specifically for Indian firefighters and rescue personnel. It uses an AMG8833 thermal sensor to detect heat signatures through smoke, providing real-time edge detection on smartphones for smoke-filled environments where visibility is zero.
 
-**Problem Solved:** 15-minute rescue operations → 3-5 minute rescues. Estimated **\ Hundreds of lives saved annually** at national scale.
+**Problem Solved:** 15-minute rescue operations → **3–5 minute rescues**, potentially **saving hundreds of lives annually** at national scale.
+
 
 ---
 
