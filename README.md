@@ -56,7 +56,7 @@
 
 ### Prerequisites
 
-- Raspberry Pi Zero W (512MB RAM)
+- Raspberry Pi Zero  2 W (512MB RAM)
 - AMG8833 Thermal Sensor Module
 - Smartphone/Tablet with Wi-Fi
 - Python 3.9+
