@@ -40,7 +40,7 @@
 └──────────────────────┬──────────────────────────────────┘
                        │ Wi-Fi / USB
 ┌──────────────────────▼──────────────────────────────────┐
-│         RASPBERRY PI ZERO W (Processing Layer)          │
+│         RASPBERRY PI ZERO 2W (Processing Layer)         │
 │  Python 3.9 • OpenCV 4.5 • NumPy • Flask Server        │
 └──────────────────────┬──────────────────────────────────┘
                        │ I2C Protocol
@@ -96,7 +96,7 @@ See **[Installation Guide](#installation)** for detailed steps.
 | Component                  | Source                           | Cost (₹)   | Cost ($) | Notes                       |
 | -------------------------- | -------------------------------- | ---------- | -------- | --------------------------- |
 | AMG8833 Thermal Sensor     | AliExpress India / RS Components | 2,500      | $30      | 8×8 thermal array, I2C      |
-| Raspberry Pi Zero W        | GeeksforGeeks / Amazon India     | 3,000      | $36      | 512MB RAM, WiFi built-in    |
+| Raspberry Pi Zero 2W       | GeeksforGeeks / Amazon India     | 3,000      | $36      | 512MB RAM, WiFi built-in    |
 | USB Power Bank (10,000mAh) | Local electronics shop           | 1,500      | $18      | Lasts 8+ hours              |
 | USB Cable + Adapters       | Local shop                       | 300        | $4       | Micro-USB standard          |
 | Helmet Mount               | DIY 3D-print / Local hardware    | 400        | $5       | Aluminum or plastic bracket |
@@ -119,7 +119,7 @@ See **[Installation Guide](#installation)** for detailed steps.
 ### Minimum Requirements
 
 ```
-Raspberry Pi Zero W ...................Required
+Raspberry Pi Zero 2W ................. Required
 AMG8833 Thermal Sensor ............... Required
 USB Power Bank (5V, 2A) .............. Required
 Micro-USB Cable + USB-A Adapter ...... Required
@@ -129,7 +129,7 @@ Smartphone (Android/iOS) ............. Required
 ### Recommended Setup (Enhanced Durability)
 
 ```
-Raspberry Pi Zero W (with GPIO headers pre-soldered)
+Raspberry Pi Zero 2W (with GPIO headers pre-soldered)
 AMG8833 with breakout board (pre-assembled)
 20,000mAh Power Bank (longer mission runtime)
 Protective silicone case
