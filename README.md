@@ -17,9 +17,9 @@
 ### Hardware Setup
 
 ```
-[Screenshot: Helmet-mounted thermal sensor + Pi Zero W]
+[Screenshot: Helmet-mounted thermal sensor + Pi Zero 2 W]
 [Screenshot: Connections diagram]
-[Screenshot: Live thermal feed on phone]
+[Screenshot: Live thermal feed on phone/HUD]
 ```
 
 ### Live Demo
