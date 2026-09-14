@@ -89,6 +89,7 @@ See **[Installation Guide](#installation)** for detailed steps.
 ✅ **Production-Ready:** Field-tested in Mumbai Fire Brigade pilot (2024)  
 ✅ **Easy to Repair:** Replace components at any electronics shop in India
 
+
 ---
 
 ## 💰 Cost Breakdown
@@ -124,6 +125,7 @@ AMG8833 Thermal Sensor ............... Required
 USB Power Bank (5V, 2A) .............. Required
 Micro-USB Cable + USB-A Adapter ...... Required
 Smartphone (Android/iOS) ............. Required
+OLED Diplay .......................... Required
 ```
 
 ### Recommended Setup (Enhanced Durability)
@@ -135,6 +137,7 @@ AMG8833 with breakout board (pre-assembled)
 Protective silicone case
 Sapphire window lens cover (dust/scratch protection)
 Heat-dissipating aluminum fins
+OLED Display 
 ```
 
 ### Optional Components
@@ -149,7 +152,7 @@ Epoxy coating kit (electronics waterproofing)
 ### Pin Configuration
 
 ```
-AMG8833 ← I2C Connection → Raspberry Pi Zero W
+AMG8833 ← I2C Connection → Raspberry Pi Zero 2 W
 
 Sensor Pin → Pi Pin
 ─────────────────────
@@ -208,7 +211,7 @@ chmod +x thermal_stream.py
 ### Step 5: Connect Thermal Sensor
 
 ```bash
-# Wire AMG8833 to Pi Zero W (see Pin Configuration above)
+# Wire AMG8833 to Pi Zero 2W (see Pin Configuration above)
 # Verify connection:
 i2cdetect -y 1
 # Should show: 69 (if AMG8833 detected)
@@ -424,13 +427,6 @@ See full troubleshooting guide: **[docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING
 | **CPU Usage**          | 15-30%          | On Pi Zero W (single core)        |
 | **Memory Usage**       | 45-60MB         | RAM on Pi Zero                    |
 
-### Stress Test Results
-
-```bash
-# Continuous 6-hour operation
-python3 stress_test.py
-# Results: Zero crashes, latency stable 140-150ms, battery drain 12%/hour
-```
 
 ---
 
@@ -473,32 +469,6 @@ See **[docs/SECURITY.md](docs/SECURITY.md)** for detailed guidelines.
 | **[Field Deployment](docs/FIELD_DEPLOYMENT.md)** | Firefighter training + operational guidelines |
 | **[Architecture](docs/ARCHITECTURE.md)**         | Deep dive into system design                  |
 | **[Contributing](CONTRIBUTING.md)**              | How to contribute to the project              |
-
----
-
-## 🚒 Real-World Deployment
-
-### Mumbai Fire Brigade Pilot (2024)
-
-```
-✅ 50 units deployed in Dharavi slum area
-✅ Average rescue time: 15 min → 4.3 min (72% improvement)
-✅ Zero hardware failures in 6-month field test
-✅ 85% firefighter satisfaction score
-✅ Estimated 12 lives saved during pilot period
-```
-
-**[Read case study →](docs/CASE_STUDY_MUMBAI.md)**
-
-### Partner Fire Departments
-
-```
-- Mumbai Fire Brigade (MFB)
-- Delhi Fire Service (DFS)
-- Bangalore Fire & Emergency Services
-- National Disaster Response Force (NDRF)
-- Punjab Fire Service Academy
-```
 
 ---
 
@@ -598,9 +568,8 @@ This project is licensed under the **MIT License** - see **[LICENSE](LICENSE)** 
 - **Raspberry Pi Foundation:** For affordable embedded computing
 - **OpenCV Project:** Computer vision library
 - **Flask:** Lightweight web framework
-- **Mumbai Fire Brigade:** Field testing and feedback
-- **NDRF (National Disaster Response Force):** Operational insights
-- **Indian firefighting community:** For their sacrifice and feedback
+- **Pune Fire Brigade:** Field testing and feedback
+
 
 ---
 
@@ -616,16 +585,6 @@ This project is licensed under the **MIT License** - see **[LICENSE](LICENSE)** 
 ### Request Features
 
 **Need a feature?** Check [Discussions](https://github.com/SiddhantNK/AgniNetram/discussions) or open a new one.
-
----
-
-## 🔥 In the News
-
-- _"How AgniNetram is saving Indian firefighters with ₹9,000 thermal vision"_ — The Better India
-- _"Open-source thermal HUD wins MeitY Innovation Award 2024"_ — Indian Tech News
-- _"Frugal innovation: Mumbai firefighters see through smoke thanks to local startup"_ — Mint
-
-[Read more press coverage →](docs/PRESS.md)
 
 ---
 
